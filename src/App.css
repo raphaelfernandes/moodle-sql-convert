@@ -1,33 +1,118 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #2a1ea6;
+  background-image: linear-gradient(to right top, #2a1ea6, #313db6, #3e57c5, #5070d1, #6588db, #619be7, #61adf0, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+header h1{
+  margin: 0;
+  padding: 15px 25px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.content{
+  display: flex;
+}
+.col-item{
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.buttons-convert{
+  height: 50px;
+}
+
+.buttons-convert label{
+  padding: 15px;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.buttons-convert .inp-prefix{
+  margin: 0 0 0 15px; 
+  font-size: 1.2em;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.buttons-convert button{
+  display: block;
+  padding: 15px;
+  margin:0;
+  border: none;
+  width: 100%;
+}
+
+#editor-left{
+  width: 99% !important;
+}
+
+#editor-right{
+  width: 99% !important;
+  float:right;
+}
+
+footer div{
+  height: 50px;
+}
+
+.g-msc{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.label-switch{
+  padding: 0 15px;
+  font-weight: bold;
+  font-size: 1.4em;
+  position: absolute;
+  line-height: 1.5rem;
+  padding-top: 0.1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .inp-prefix{
+    width: 50%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 700px) {
+  header h1{
+    text-align: center;
+  }
+  .content{
+    flex-direction: column;
+  }
+  
+  .buttons-convert{
+    height: unset;
+    text-align: center;
+  }
+  
+  .buttons-convert .col-item{
+    padding: 15px 0;
+  }
+
+  .label-switch{
+    position: unset;
+  }
+
+  #editor-left{
+    width: 100% !important;
+    height: 300px !important;
+  }
+
+  #editor-right{
+    margin-top: 15px;
+    width: 100% !important;
+    float:none;
+    height: 300px !important;
   }
 }
