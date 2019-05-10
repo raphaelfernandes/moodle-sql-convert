@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/moodle-sql-convert/precache-manifest.0b686ab0b222162cc0cbd0aaefa5c17d.js"
+  "/moodle-sql-convert/precache-manifest.61c015669c8885c23db4d4d74f91c95d.js"
 );
 
 self.addEventListener('message', (event) => {
